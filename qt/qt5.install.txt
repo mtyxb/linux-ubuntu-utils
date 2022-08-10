@@ -1,0 +1,8 @@
+
+qt-everywhere-src-5.12.9
+
+qt configure problem:
+edit  qtbase/src/corelib/global/qglobal.h 
+add   # include <limits>
+   
+

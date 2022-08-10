@@ -1,0 +1,9 @@
+all problems:
+
+xinerama:
+sudo apt install --reinstall libxcb-xinerama0
+
+qtcreator: No CMake configuration found!
+sudo apt-get install libgl-dev
+
+

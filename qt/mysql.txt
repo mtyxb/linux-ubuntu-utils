@@ -1,0 +1,24 @@
+install:
+
+sudo docker pull mysql:latest
+
+mysql -uroot -p -h 172.17.0.2
+
+mysql-cppconn:
+sudo apt-get install libssl-dev
+
+sudo apt install  libmysqlclient21
+sudo apt install  libmysqlclient-dev 
+
+nm -C --defined-only --extern-only --print-size --line-numbers libmysqlcppconn.so.9.8.0.30 |grep get_driver_instance
+readelf -C -W -s libmysqlcppconn.so.9.8.0.30  |grep get_driver_instance
+
+
+g++:
+ -fvisibility=[default|internal|hidden|protected]
+ -fvisibility-inlines-hidden
+
+ ggc-min-heapsize
+ ggc-min-expand
+ ggc-max-heapsize
+
