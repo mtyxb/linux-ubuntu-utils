@@ -1,0 +1,23 @@
+#deb https://cn.archive.ubuntu.com/ubuntu/ jammy-updates main restricted
+#deb https://cn.archive.ubuntu.com/ubuntu/ jammy universe
+#deb https://cn.archive.ubuntu.com/ubuntu/ jammy-updates universe
+#deb https://cn.archive.ubuntu.com/ubuntu/ jammy multiverse
+#deb https://cn.archive.ubuntu.com/ubuntu/ jammy-updates multiverse
+#deb https://cn.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
+
+deb https://mirrors.163.com/ubuntu/ jammy-updates main restricted
+deb https://mirrors.163.com/ubuntu/ jammy universe
+deb https://mirrors.163.com/ubuntu/ jammy-updates universe
+deb https://mirrors.163.com/ubuntu/ jammy multiverse
+deb https://mirrors.163.com/ubuntu/ jammy-updates multiverse
+deb https://mirrors.163.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ jammy-security main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted
+deb https://mirrors.aliyun.com/ubuntu/ jammy universe
+deb https://mirrors.aliyun.com/ubuntu/ jammy-updates universe
+deb https://mirrors.aliyun.com/ubuntu/ jammy multiverse
+deb https://mirrors.aliyun.com/ubuntu/ jammy-updates multiverse
+deb https://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+
