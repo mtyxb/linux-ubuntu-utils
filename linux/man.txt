@@ -1,0 +1,3 @@
+sudo apt install -y manpages manpages-dev manpages-posix manpages-posix-dev
+
+

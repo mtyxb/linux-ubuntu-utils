@@ -1,0 +1,7 @@
+bash命令行快捷键：
+CTRL+A/E：光标移动到行首/行尾
+CTRL+LEFT/RIGHT: 移动到前/后一个单词
+CTRL+W/ALT+D：删除光标前面/后面的一个单词
+CTRL+U：从光标位置删除到行首
+CTRL+K：从光标位置删除到行尾
+

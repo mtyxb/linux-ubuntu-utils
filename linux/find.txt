@@ -1,0 +1,6 @@
+#find命令携带-execdir参数时后面必须有\;这样的符号，否则会有错误
+find $(pwd) -type d -execdir find $(pwd){} -type d \;|sort|uniq|awk -F '\n' '{printf "%s,\n", $1}'|xargs
+
+#for .vimrc set path=/usr/include,/usr/local/include
+find $(pwd) -type f -name "*.h"  -printf "%h\n"|sort|uniq|awk -F '\n' '{printf "%s,",$1}'
+

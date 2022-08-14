@@ -1,0 +1,43 @@
+
+I   在行首插入随后输入的字符串
+A   在行尾输入随后输入的字符串
+
+Explore  浏览目录中的文件
+
+v  字符可视化模式
+V  行可视化模式
+CTRL+v 块可视化模式
+
+r 读取指定文件内容到当前文件中
+r!ls -l 读取执行命令的结果到当前文件中
+
+文件跟踪：
+gf  打开光标处字符串为文件名的文件
+CTRL+o  退后一步(这个可以一直退后到之前打开过的文件)
+:bf 退后到最顶层
+
+分屏操作：
+CTRL+w s 水平分屏方式打开当前文件
+CTRL+w v 垂直分屏方式打开当前文件
+CTRL+w f在水平分屏中打开光标处字符串为文件名的文件
+CTRL+w w: 切换到下一个分屏中
+CTRL+w c 关闭当前分屏
+
+标签页操作：
+CTRL+w gf 在新的tab中打开光标处字符串为文件名的文件
+:tab split 在新的tab中打开当前文件
+:tabc  关闭当前标签页
+gt  切换到下一个标签页
+1gt 切换到第1个标签页，依次类推
+
+#查找所有的包含.h文件的目录，输出成.vimrc要求的格式
+find $(pwd) -type f -name "*.h"  -printf "%h\n"|sort|uniq|awk -F '\n' '{printf "%s,",$1}'
+
+#更好的选择
+export VIM_INCLUDE_ROOT_PATH=$(pwd)
+source vim.sh
+echo $VIM_PATH
+edit ~/.vimrc to update line set path=., ......
+
+
+
